@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans,sans-serif;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/workspace-1280538_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#left{
+    width: 35%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-right: 3px solid #fff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-container{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form-container .header{
+    font-size: 42px;
+    font-weight: bold;
+    color: #685752;
+}
+
+#username , #password {
+    background-color: transparent;
+    border: none;
+    width: 60%;
+    padding: 20px;
+    height: 4vh;
+    font-size: 16px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    transition: all linear 0.4s;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.form-container #sumbit-btn{
+    width: 60%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    color: #685752;
+    border-radius: 10px;
+    transition: all linear 0.5s;
+
+    &:hover{
+        background-color: #685752; color: #fff;
+    }
+}
+
+#right{
+    width: 65%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.social-icons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.social-icons a{
+    color: #fff;
+    font-size: 30px;
+    transition: all linear 0.5s;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* overflow: hidden; */
+}
